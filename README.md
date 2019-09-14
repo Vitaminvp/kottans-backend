@@ -4,7 +4,7 @@ Backend Course. The course contains basics of backend development: fundamentals 
 ___
 ## :vertical_traffic_light: Language-specific Topics: Part I
 
-| [learnyounode](learnyounode/learnyounode.png) |
+| [learnyounode](learnyounode/learnyounode.png) | [functional-javascript-workshop](functional-javascript-workshop/functional-javascript-workshop.png) |
 
 **Reflections**
  - **It wasn't as easy as I thought**
