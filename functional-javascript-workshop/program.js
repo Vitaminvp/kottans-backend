@@ -64,8 +64,66 @@
 // module.exports = countWords;
 
 // 7.
-function reduce(arr, fn, initial) {
+// function reduce(arr, fn, initial) {
+//   return (function reduceOne(index, value) {
+//     if (index > arr.length - 1) return value; // end condition
+//     return reduceOne(index + 1, fn(value, arr[index], index, arr)); // calculate & pass values to next step
+//   })(0, initial); // IIFE. kick off recursion with initial values
+// }
+// module.exports = reduce;
+
+// 8.
+// function duckCount() {
+//   return Array.from(arguments).filter(item =>
+//     Object.prototype.hasOwnProperty.call(item, "quack")
+//   ).length;
+// }
+// module.exports = duckCount;
+
+// 9.
+// function logger(namespace) {
+//   return function(...args) {
+//     console.log(`${namespace}`, ...args);
+//   };
+// }
+// module.exports = logger;
+// -------------------------------------------
+// var slice = Array.prototype.slice;
+// function logger(namespace) {
+//   return function() {
+//     console.log.apply(console, [namespace].concat(slice.call(arguments)));
+//   };
+// }
+// module.exports = logger;
+
+// 10.
+// module.exports = function(namespace) {
+//   return function (...args) {
+//     console.log(...args)
+//   }.bind(null, namespace)
+// }
+// -------------------------------------------
+// module.exports = function(namespace) {
+//   return console.log.bind(console, namespace)
+// }
+
+// 11.
+// module.exports = function arrayMap(arr, fn) {
+//   return arr.reduce((acc, curr) => {
+//     return [...acc, fn(curr)];
+//   }, []);
+// };
+// -------------------------------------------
+// module.exports = function arrayMap(arr, fn, thisArg) {
+//   return arr.reduce(function(acc, item, index, arr) {
+//     acc.push(fn.call(thisArg, item, index, arr))
+//     return acc
+//   }, [])
+// }
+
+// 12.
+function Spy(target, method) {
   // SOLUTION GOES HERE
 }
 
-module.exports = reduce
+module.exports = Spy
