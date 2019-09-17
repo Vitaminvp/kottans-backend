@@ -122,8 +122,180 @@
 // }
 
 // 12.
-function Spy(target, method) {
-  // SOLUTION GOES HERE
-}
+// function Spy(target, method) {
+//   const fn = target[method];
+//   const result = { count: 0 };
+//   target[method] = function(...args) {
+//     result.count += 1;
+//     return fn.apply(this, args);
+//   };
+//   return result;
+// }
+// module.exports = Spy;
+// -------------------------------------------
+// function Spy(target, method) {
+//   var originalFunction = target[method];
+//   // use an object so we can pass by reference, not value
+//   // i.e. we can return result, but update count from this scope
+//   var result = {
+//     count: 0
+//   };
+//   // replace method with spy method
+//   target[method] = function() {
+//     result.count++; // track function was called
+//     return originalFunction.apply(this, arguments); // invoke original function
+//   };
+//   return result;
+// }
+// module.exports = Spy;
 
-module.exports = Spy
+// 13.
+// function repeat(operation, num) {
+//   // modify this so it can be interrupted
+//   if (num <= 0) return;
+//   operation();
+//   return setImmediate(() => repeat(operation, --num));
+// }
+// module.exports = repeat;
+//
+// function repeat(operation, num) {
+//   if (num <= 0) return;
+//   operation();
+//   // release control every 10 or so
+//   // iterations.
+//   // 10 is arbitrary.
+//   if (num % 10 === 0) {
+//     setTimeout(function() {
+//       repeat(operation, --num);
+//     });
+//   } else {
+//     repeat(operation, --num);
+//   }
+// }
+// module.exports = repeat;
+
+// 14.
+// function repeat(operation, num) {
+//   if (num <= 0) return;
+//   operation();
+//   return () => repeat(operation, --num);
+// }
+// function trampoline(fn) {
+//   let func;
+//   if (fn && typeof fn === "function") {
+//     func = fn();
+//   }
+//   return func;
+// }
+// module.exports = function(operation, num) {
+//   return trampoline(repeat(operation, num));
+// };
+//  -------------------------------------------
+// function repeat(operation, num) {
+//   return function() {
+//     if (num <= 0) return
+//     operation()
+//     return repeat(operation, --num)
+//   }
+// }
+// function trampoline(fn) {
+//   while(fn && typeof fn === 'function') {
+//     fn = fn()
+//   }
+// }
+// module.exports = function(operation, num) {
+//   trampoline(function() {
+//     return repeat(operation, num)
+//   })
+// }
+
+// 15.
+// function loadUsers(userIds, load, done) {
+//   const users = [];
+//   let count = 0;
+//   for (let i = 0; i < userIds.length; i++) {
+//     users[i] = load(userIds[i]);
+//     count++;
+//     if (count === userIds.length) {
+//       done(users);
+//     }
+//   }
+//   return users;
+// }
+// module.exports = loadUsers;
+//  -------------------------------------------
+// function loadUsers(userIds, load, done) {
+//   var completed = 0;
+//   var users = [];
+//   userIds.forEach(function(id, index) {
+//     load(id, function(user) {
+//       users[index] = user;
+//       if (++completed === userIds.length) return done(users);
+//     });
+//   });
+// }
+//
+// module.exports = loadUsers;
+
+
+// 16.
+// function getDependencies(tree) {
+//   const depth = dep => {
+//     if (!dep.dependencies) return [];
+//     if (typeof dep === "object" && !Array.isArray(dep))
+//       return Object.keys(dep.dependencies).reduce((acc, item) => {
+//         return dep.dependencies[item].dependencies
+//           ? [
+//               ...acc,
+//               `${item}@${dep.dependencies[item].version}`,
+//               ...depth(dep.dependencies[item])
+//             ]
+//           : [...acc, `${item}@${dep.dependencies[item].version}`];
+//       }, []);
+//   };
+//   const unic = Array.from(new Set(depth(tree))).sort();
+//   return unic;
+// }
+// module.exports = getDependencies;
+// -------------------------------------------
+// function getDependencies(mod, result) {
+//   result = result || [];
+//   var dependencies = (mod && mod.dependencies) || [];
+//   Object.keys(dependencies).forEach(function(dep) {
+//     var key = dep + "@" + mod.dependencies[dep].version;
+//     if (result.indexOf(key) === -1) result.push(key);
+//     getDependencies(mod.dependencies[dep], result);
+//   });
+//   return result.sort();
+// }
+// module.exports = getDependencies;
+
+// 17.
+// function curryN(fn, n) {
+//   const arity = n || fn.length;
+//   return function one(...args1) {
+//     if(args1.length >= arity) {
+//       return fn(...args1)
+//     }
+//     return function two (...args2) {
+//       const args = [...args1, ...args2];
+//       if(args.length >= arity) {
+//         fn(...args)
+//       }
+//       return one(...args)
+//     }
+//   }
+// }
+// module.exports = curryN
+// -------------------------------------------
+// function curryN(fn, n) {
+//   n = n || fn.length
+//   return function curriedN(arg) {
+//     if (n <= 1) return fn(arg)
+//     return curryN(fn.bind(this, arg), n - 1)
+//   }
+// }
+// module.exports = curryN
+
+// 18.
+// module.exports = Function.prototype.call.bind(Array.prototype.slice);

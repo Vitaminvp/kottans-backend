@@ -7,7 +7,6 @@ ___
 | [learnyounode](learnyounode/learnyounode.png) | [functional-javascript-workshop](functional-javascript-workshop/functional-javascript-workshop.png) |
 
 **Reflections**
- - **It wasn't as easy as I thought**
+ - **It wasn\'t as easy as I thought**
  - **Done somethings**
 
- 
