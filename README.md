@@ -9,4 +9,3 @@ ___
 **Reflections**
  - **It wasn\'t as easy 🎉 as I thought**
  - **Maybe need to read some theoretical materials **
-
