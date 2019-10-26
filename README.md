@@ -23,6 +23,9 @@ ___
     - *The string lives in the **Text segment**, which is read-only and stores all of your code in addition to tidbits like string literals. The text segment also maps your binary file in memory, but writes to this area earn your program a Segmentation Fault. This helps prevent pointer bugs, though not as effectively as avoiding C in the first place.*
     - *A **Text segment** contains read-only code and data. A **Data segment** contains data that may be both readable and writable.*
     
-## TCP. UDP. Network
+## 🕸 TCP. UDP. Network 🕷
 
 | [Internet 101](task_networks/how_the_internet_works.png) | [Networking for Web Developers](task_networks/networking_for_web_developers.png) |
+
+**Reflections**
+ - **Almost 🧛‍♂️🧛‍♀️ Halloween 🧟‍♂️ 🧟‍♀️**
