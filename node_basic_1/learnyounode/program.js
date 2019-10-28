@@ -51,7 +51,7 @@
 // })
 
 // 6.
-// const filterFn = require("./mymodule.js");
+// const filterFn = require("./mymodule_1.js");
 // const dir = process.argv[2];
 // const filterStr = process.argv[3];
 //
