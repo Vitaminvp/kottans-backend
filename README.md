@@ -41,6 +41,7 @@ ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0        [vsyscall]
 Heap - `5603bbeae000-5603bc1e2000`,
 stack - `7ffcf0e6a000-7ffcf0e8b000`,
 MMS - `7f61d6db6000-7f61d6dc1000`.
+
 ## 🕸 TCP. UDP. Network 🕷
 
 | [Internet 101](task_networks/how_the_internet_works.png) | [Networking for Web Developers](task_networks/networking_for_web_developers.png) |
@@ -53,3 +54,16 @@ MMS - `7f61d6db6000-7f61d6dc1000`.
 
 **Reflections**
  - **Almost 🧛‍♂️🧛‍♀️ Halloween 🧟‍♂️ 🧟‍♀️**
+
+## Http & Https
+
+**Questions ❓**
+1. Name at least three possible negative consequences of not using https.
+1. Explain the main idea behind public key cryptography in few sentences
+1. You are creating an application for pet clinic. You need to implement the following functionality:
+- add new pet (including name, age, breed, owner's name, medical history)
+- search pet by name
+- change name of an existing pet
+- add new info about pet's health
+- assign a pet to a particular doctor in the clinic
+- register an appointment for a pet. This request should include info about pet, doctor and appointment date and time. 
