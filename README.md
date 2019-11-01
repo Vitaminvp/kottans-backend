@@ -55,7 +55,7 @@ MMS - `7f61d6db6000-7f61d6dc1000`.
 **Reflections**
  - **Almost 🧛‍♂️🧛‍♀️ Halloween 🧟‍♂️ 🧟‍♀️**
 
-## Http & Https
+## 📬 Http & Https 🕊
 
 **Questions ❓**
 1. Name at least three possible negative consequences of not using https.
@@ -67,3 +67,5 @@ MMS - `7f61d6db6000-7f61d6dc1000`.
 - add new info about pet's health
 - assign a pet to a particular doctor in the clinic
 - register an appointment for a pet. This request should include info about pet, doctor and appointment date and time. 
+
+## 🏞 Patterns
