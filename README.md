@@ -67,29 +67,31 @@ MMS - `7f61d6db6000-7f61d6dc1000`.
     - If anyone, even you, encrypts data with your *public-key*, only you can decrypt it with your *private key*.
       If you encrypt data with your *private key*, anyone can decrypt it, but this serves as a proof that you encrypted it: it’s “digitally signed” by you.
 1. You are creating an application for pet clinic. You need to implement the following functionality:
-- add new pet (including name, age, breed, owner's name, medical history)
-    - request `POST` `/pets` `{name,age,breed,owner,medicalHistory}` ⤸ 
-    - response `status 201` `{id}`
-- search pet by name
-    - request `GET` `/pets?name=<name>` ⤸ 
-    - response `status 200` `{petId,name,age,breed,owner,medicalHistory}`
-- change name of an existing pet
-    - request `PUT/PATCH` `/pets/<petId>` `{name: newName}` ⤸ 
-    - response `status 200` `{petId,newName,age,breed,owner,medicalHistory}`
-- add new info about pet's health
-    - request `PUT/PATCH` `/pets/<petId>` `{medicalHistory: newMedicalHistory}` ⤸ 
-    - response `status 200` `{petId,newName,age,breed,owner,newMedicalHistory}`
-- assign a pet to a particular doctor in the clinic
-    - request `PUT/PATCH` `/pets/<petId>` `{doctorId}` ⤸ 
-    - response `status 200` `{id,newName,age,breed,owner,newMedicalHistory,doctorId}`
-- register an appointment for a pet. This request should include info about pet, doctor and appointment date and time.
-    - request `POST` `/visit` `{petId,doctorId,dateTime}` ⤸ 
-    - response `status 201` `{visitId,petId,doctorId,dateTime}`
+    - add new pet (including name, age, breed, owner's name, medical history)
+        - request `POST` `/pets` `{name,age,breed,owner,medicalHistory}` ⤸ 
+        - response `status 201` `{id}`
+    - search pet by name
+        - request `GET` `/pets?name=<name>` ⤸ 
+        - response `status 200` `{petId,name,age,breed,owner,medicalHistory}`
+    - change name of an existing pet
+        - request `PUT/PATCH` `/pets/<petId>` `{name: newName}` ⤸ 
+        - response `status 200` `{petId,newName,age,breed,owner,medicalHistory}`
+    - add new info about pet's health
+        - request `PUT/PATCH` `/pets/<petId>` `{medicalHistory: newMedicalHistory}` ⤸ 
+        - response `status 200` `{petId,newName,age,breed,owner,newMedicalHistory}`
+    - assign a pet to a particular doctor in the clinic
+        - request `PUT/PATCH` `/pets/<petId>` `{doctorId}` ⤸ 
+        - response `status 200` `{id,newName,age,breed,owner,newMedicalHistory,doctorId}`
+    - register an appointment for a pet. This request should include info about pet, doctor and appointment date and time.
+        - request `POST` `/visit` `{petId,doctorId,dateTime}` ⤸ 
+        - response `status 201` `{visitId,petId,doctorId,dateTime}`
 
 ## 🏞 Patterns 👷
+
+| [Software Architecture & Design](patterns/software_architecture_design.png) |
 
 ## 🏗 Data Structures 🚧
 
 ## 🗃 File System 📁
 
-## 🏃 NodeJS Runtime and Ecosystem 🕰
+## 🏃 Runtime and Ecosystem 🕰
