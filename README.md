@@ -8,7 +8,7 @@ ___
 
 **Reflections**
  - **It wasn\'t as easy 🎉 as I thought 😐**
- - **Maybe need to read some theoretical materials before**
+ - **Maybe need to read some theoretical materials at first**
 
 ## 📝 Memory Management
 
@@ -68,4 +68,10 @@ MMS - `7f61d6db6000-7f61d6dc1000`.
 - assign a pet to a particular doctor in the clinic
 - register an appointment for a pet. This request should include info about pet, doctor and appointment date and time. 
 
-## 🏞 Patterns
+## 🏞 Patterns 👷
+
+## 🏗 Data Structures 🚧
+
+## 🗃 File System 📁
+
+## 🏃 NodeJS Runtime and Ecosystem 🕰
