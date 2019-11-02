@@ -104,7 +104,7 @@ MMS - `7f61d6db6000-7f61d6dc1000`.
 | [Software Architecture & Design](patterns/software_architecture_design.png) |
 
 **Reflections**
- - **I thought I would die ☠, so boring video️ 🛌** 
+ - **I thought I would die ☠, ⬆ so boring video️ 🛌** 
  
 ## 🏗 Data Structures 🚧
 
