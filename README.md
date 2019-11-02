@@ -1,4 +1,4 @@
-# kottans-backend 😺
+# Kottans-backend 😺
 Backend Course. The course contains basics of backend development: fundamentals of NodeJS or Golang and backend frameworks as well as necessary computer science basics, network and protocols, database fundamentals etc.
 
 ___
@@ -59,14 +59,32 @@ MMS - `7f61d6db6000-7f61d6dc1000`.
 
 **Questions ❓**
 1. Name at least three possible negative consequences of not using https.
-1. Explain the main idea behind public key cryptography in few sentences
+    - **Integrity** - *Man In The Middle Attackers* could read or modify any requests
+    - **Privacy** - eavesdropping passwords and private information
+    - **Identification** - changing your destination server to phishing
+    - **Trustability** - site could be not recommended to visit by browser
+1. Explain the main idea behind public key cryptography in few sentences.
+    - If anyone, even you, encrypts data with your *public-key*, only you can decrypt it with your *private key*.
+      If you encrypt data with your *private key*, anyone can decrypt it, but this serves as a proof that you encrypted it: it’s “digitally signed” by you.
 1. You are creating an application for pet clinic. You need to implement the following functionality:
 - add new pet (including name, age, breed, owner's name, medical history)
+    - request `POST` `/pets` `{name,age,breed,owner,medicalHistory}` ⤸ 
+    - response `status 201` `{id}`
 - search pet by name
+    - request `GET` `/pets?name=<name>` ⤸ 
+    - response `status 200` `{petId,name,age,breed,owner,medicalHistory}`
 - change name of an existing pet
+    - request `PUT/PATCH` `/pets/<petId>` `{name: newName}` ⤸ 
+    - response `status 200` `{petId,newName,age,breed,owner,medicalHistory}`
 - add new info about pet's health
+    - request `PUT/PATCH` `/pets/<petId>` `{medicalHistory: newMedicalHistory}` ⤸ 
+    - response `status 200` `{petId,newName,age,breed,owner,newMedicalHistory}`
 - assign a pet to a particular doctor in the clinic
-- register an appointment for a pet. This request should include info about pet, doctor and appointment date and time. 
+    - request `PUT/PATCH` `/pets/<petId>` `{doctorId}` ⤸ 
+    - response `status 200` `{id,newName,age,breed,owner,newMedicalHistory,doctorId}`
+- register an appointment for a pet. This request should include info about pet, doctor and appointment date and time.
+    - request `POST` `/visit` `{petId,doctorId,dateTime}` ⤸ 
+    - response `status 201` `{visitId,petId,doctorId,dateTime}`
 
 ## 🏞 Patterns 👷
 
