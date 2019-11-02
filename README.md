@@ -57,6 +57,19 @@ MMS - `7f61d6db6000-7f61d6dc1000`.
 
 ## 📬 Http & Https 🕊
 
+**Practice**
+
+***Exploring GitHub API.***
+
+ - `curl https://api.github.com/users/vitaminvp`
+ - `curl -i https://api.github.com/users/vitaminvp`
+ - `curl https://api.github.com/gists/starred`
+ - `curl --user "vitaminvp:BLABLABLA" https://api.github.com/gists/starred`
+ - `curl --user "vitaminvp:*****" https://api.github.com/gists/starred`
+ - `curl --user "vitaminvp" https://api.github.com/gists/starred`
+ - `curl -i https://api.github.com/orgs/kottans/repos`
+ - `curl -H 'Authorization: token *****' https://api.github.com/repos/vitaminvp/kottans-backend/issues -d '{"title": "Test issue", "body": "test issue body"}'`
+
 **Questions ❓**
 1. Name at least three possible negative consequences of not using https.
     - **Integrity** - *Man In The Middle Attackers* could read or modify any requests
@@ -90,6 +103,9 @@ MMS - `7f61d6db6000-7f61d6dc1000`.
 
 | [Software Architecture & Design](patterns/software_architecture_design.png) |
 
+**Reflections**
+ - **I thought I would die ☠, so boring video️ 🛌** 
+ 
 ## 🏗 Data Structures 🚧
 
 ## 🗃 File System 📁
