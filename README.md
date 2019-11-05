@@ -8,7 +8,7 @@ ___
 
 **Reflections**
  - **It wasn\'t as easy 🎉 as I thought 😐**
- - **Maybe need to read some theoretical materials at first**
+ - **Maybe need to read some docs at first**
 
 ## 📝 Memory Management
 
@@ -114,6 +114,6 @@ MMS - `7f61d6db6000-7f61d6dc1000`.
  - `mkdir file_system` `touch secret.txt` `echo "secret" > secret.txt` `printf " text" >> secret.txt`
  - `chmod u+x,o+r secret.txt`
  
-    | [secret.txt](file_system/secret.txt)| [file_system_task.js](file_system/file_system_task.js) |
+    | [secret.txt](file_system/secret.txt) | [file_system_task.js](file_system/file_system_task.js) |
 
 ## 🏃 Runtime and Ecosystem 🕰
