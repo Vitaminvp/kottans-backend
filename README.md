@@ -104,14 +104,15 @@ MMS - `7f61d6db6000-7f61d6dc1000`.
 | [Software Architecture & Design](patterns/software_architecture_design.png) |
 
 **Reflections**
- - **I thought I would die ☠, ⬆ so boring 🛌 video️ ** 
+ - **I thought I would die ☠, ⬆ so boring 🛌 video️** 
  
 ## 🏗 Data Structures 🚧
 
 ## 🗃 File System 📁
 
 **Practical Task**
- -  `mkdir file_system` `touch secret.txt` `echo "secret" > secret.txt` `printf " text" >> secret.txt`
+ - `mkdir file_system` `touch secret.txt` `echo "secret" > secret.txt` `printf " text" >> secret.txt`
  - `chmod u+x,o+r secret.txt`
+ | [file_system_task.js](file_system/file_system_task.js) |
 
 ## 🏃 Runtime and Ecosystem 🕰
