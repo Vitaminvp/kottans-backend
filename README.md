@@ -113,6 +113,7 @@ MMS - `7f61d6db6000-7f61d6dc1000`.
 **Practical Task**
  - `mkdir file_system` `touch secret.txt` `echo "secret" > secret.txt` `printf " text" >> secret.txt`
  - `chmod u+x,o+r secret.txt`
- | [file_system_task.js](file_system/file_system_task.js) |
+ 
+    | [file_system_task.js](file_system/file_system_task.js) |
 
 ## 🏃 Runtime and Ecosystem 🕰
