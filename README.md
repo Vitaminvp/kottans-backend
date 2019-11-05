@@ -110,8 +110,8 @@ MMS - `7f61d6db6000-7f61d6dc1000`.
 
 ## 🗃 File System 📁
 
-### Practical Task
-1. `mkdir file_system` `touch secret.txt` `echo "secret" > secret.txt` `printf " text" >> secret.txt`
-1. `chmod u+x,o+r secret.txt`
+**Practical Task**
+ -  `mkdir file_system` `touch secret.txt` `echo "secret" > secret.txt` `printf " text" >> secret.txt`
+ - `chmod u+x,o+r secret.txt`
 
 ## 🏃 Runtime and Ecosystem 🕰
