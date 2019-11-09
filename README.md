@@ -117,3 +117,8 @@ MMS - `7f61d6db6000-7f61d6dc1000`.
     | [secret.txt](file_system/secret.txt) | [file_system_task.js](file_system/file_system_task.js) |
 
 ## 🏃 Runtime and Ecosystem 🕰
+
+## Databases
+
+| [Intro to Relational Databases](sql_basics/Intro_to_Relational_Databases.png) |
+
