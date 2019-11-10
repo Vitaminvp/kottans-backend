@@ -3,7 +3,8 @@ Backend Course. The course contains basics of backend development: fundamentals 
 
 ___
 
-## Unix Shell
+## 💻 Unix Shell ⬛
+
 ### Linux Survival
 
 | [module #1](task_unix_shell/module1.png) | [module #2](task_unix_shell/module2.png) | [module #3](task_unix_shell/module3.png) | [module #4](task_unix_shell/module4.png) |
@@ -124,7 +125,7 @@ MMS - `7f61d6db6000-7f61d6dc1000`.
 
 ## 🏃 Runtime and Ecosystem 🕰
 
-## Databases
+## 🦑 Databases 👨‍💻
 
 | [Intro to Relational Databases](sql_basics/Intro_to_Relational_Databases.png) |
 
