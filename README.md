@@ -5,7 +5,7 @@ ___
 
 ## 💻 Unix Shell ⬛
 
-### Linux Survival
+#### Linux Survival
 
 | [module #1](task_unix_shell/module1.png) | [module #2](task_unix_shell/module2.png) | [module #3](task_unix_shell/module3.png) | [module #4](task_unix_shell/module4.png) |
 
@@ -17,7 +17,7 @@ ___
  - **It wasn\'t as easy 🎉 as I thought 😐**
  - **Maybe need to read some docs at first**
 
-## 📝 Memory Management
+## 📝 Memory Management 🔴
 
 **Questions ❓**
  - **What's going to happen if program reaches maximum limit of stack ?**
@@ -55,7 +55,7 @@ MMS - `7f61d6db6000-7f61d6dc1000`.
 
 **Subtask**
 
-| [Demo](https://vitaminvp.github.io/kottans-backend/) | [Code base](https://github.com/Vitaminvp/kottans-backend/tree/master/task_networks/sniffer) |
+| [Code base](https://github.com/Vitaminvp/kottans-backend/tree/master/task_networks/sniffer) |
 
 **`Reviewed and approved by` [@ByMyself](https://github.com/Vitaminvp)**
 
