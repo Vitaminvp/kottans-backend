@@ -127,5 +127,6 @@ MMS - `7f61d6db6000-7f61d6dc1000`.
 
 ## 🦑 Databases 👨‍💻
 
-| [Intro to Relational Databases](sql_basics/Intro_to_Relational_Databases.png) | [CodeCademy Learn SQL](sql_basics/learn_SQL.png) |
+| [Intro to Relational Databases](sql_basics/Intro_to_Relational_Databases.png) | [CodeCademy Learn SQL](sql_basics/learn_SQL.png) | [Intro to SQL: Querying and managing data]() |
 
+**Practical Task**
