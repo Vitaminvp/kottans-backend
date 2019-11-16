@@ -1,9 +1,9 @@
 SELECT
-	`person`.`first_name` AS `Name`,
-	`person`.`last_name` AS `Last name`,
-	COUNT(`order`.`id`) AS `Orders`,
-	SUM(`order_item`.`quantity`) AS `Items`,
-	SUM(`order_item`.`quantity` * `item`.`price` - `order_item`.`discount`) AS `Total $`
+	`person`.`first_name` AS `first_name`,
+	`person`.`last_name` AS `last_name`,
+	COUNT(`order`.`id`) AS `total_orders`,
+	SUM(`order_item`.`quantity`) AS `total_items_bought`,
+	SUM(`order_item`.`quantity` * `item`.`price` - `order_item`.`discount`) AS `total_money_spent`
 FROM `person`
 LEFT JOIN `order`
 ON `order`.`person_id` = `person`.`id`
