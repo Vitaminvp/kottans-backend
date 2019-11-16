@@ -131,5 +131,14 @@ MMS - `7f61d6db6000-7f61d6dc1000`.
 
 **Practical Task**
 
+| First name | Last name | Orders       | Items              | Total $           |
+| ---------- | --------- | ------------ | ------------------ | ----------------- |
+| Ann        | Peterson  | 1            | 5                  | 24.74             |
+| Josh       | Harris    | 1            | 2                  | 692.79            |
+| Sarah      | Connor    | 0            | null               | null              |
+| James      | Ball      | 2            | 13                 | 177.81            |
+
+| [select.sql](sql_basics/select.sql) | 
+
 **Reflections**
  - **🍂️** 
