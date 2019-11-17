@@ -133,10 +133,10 @@ MMS - `7f61d6db6000-7f61d6dc1000`.
 
 | first_name | last_name | total_orders | total_items_bought | total_money_spent |
 | ---------- | --------- | ------------ | ------------------ | ----------------- |
-| Ann        | Peterson  | 2            | 5                  | 24.74             |
-| Josh       | Harris    | 2            | 2                  | 692.79            |
+| Ann        | Peterson  | 1            | 5                  | 24.74             |
+| Josh       | Harris    | 1            | 2                  | 692.79            |
 | Sarah      | Connor    | 0            | null               | null              |
-| James      | Ball      | 4            | 13                 | 177.81            |
+| James      | Ball      | 2            | 13                 | 177.81            |
 
 | [select.sql](sql_basics/select.sql) | 
 
